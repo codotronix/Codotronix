@@ -1,0 +1,43 @@
+* {
+	color: #FFF;
+	background: #000;
+}
+
+ul {
+	padding-left: 0; /*Bootstrap always gives padding left 40px*/
+	margin-bottom: 0;
+}
+
+ul li {
+	list-style: none;
+}
+
+.headerPanel #logoPanel .logo {
+	color: #FFF;
+	font-size: 35px;
+}
+
+.headerPanel #logoPanel .logo:hover {
+	text-decoration: none;
+}
+
+.headerPanel .navbar .navbar-nav li a {
+	color: #FFF;
+}
+
+.headerPanel .navbar .navbar-nav li:hover,
+.headerPanel .navbar .navbar-nav li a:hover {
+	background: rgba(255, 255, 255, .3);
+	color: #FFF;
+}
+
+footer {
+	text-align: center;
+}
+
+@media (min-width: 768px) {
+	.headerPanel .navbar .container-fluid {
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
