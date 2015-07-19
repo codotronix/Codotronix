@@ -13,8 +13,12 @@ mainApp.config(['$routeProvider',
 	              templateUrl: 'partials/about.html',
 	              controller: 'aboutCtrl'
 	           })
+	           .when('/projects', {
+	              templateUrl: 'partials/projects.html',
+	              controller: 'projectsCtrl'
+	           })
 	           .when('/', {
-	           		redirectTo: '/home'
+	           		redirectTo: '/projects'
 	           })
 	           .otherwise({
 	           		redirectTo: '/'
