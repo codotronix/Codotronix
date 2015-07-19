@@ -31,20 +31,32 @@ mainApp.controller('peopleCtrl', ['$scope', 'sharedVars', function ($scope, shar
 }]);
 
 /********************* Projects Controller ***************************/
-mainApp.controller('projectsCtrl', ['$scope', 'sharedVars', function ($scope, sharedVars) {
-	$scope.projects = [
-		{"name": "Cool Project 1", "desc": "This is a very cool project. But dummy One..."},
-		{"name": "Cool Project 2", "desc": "This is a very cool project. But dummy One..."},
-		{"name": "Cool Project 3", "desc": "This is a very cool project. But dummy One..."},
-		{"name": "Cool Project 4", "desc": "This is a very cool project. But dummy One..."},
-		{"name": "Cool Project 5", "desc": "This is a very cool project. But dummy One..."},
-		{"name": "Cool Project 6", "desc": "This is a very cool project. But dummy One..."},
-		{"name": "Cool Project 7", "desc": "This is a very cool project. But dummy One..."},
-		{"name": "Cool Project 8", "desc": "This is a very cool project. But dummy One..."},
-		{"name": "Cool Project 9", "desc": "This is a very cool project. But dummy One..."},
-		{"name": "Cool Project 10", "desc": "This is a very cool project. But dummy One..."},
-		{"name": "Cool Project 11", "desc": "This is a very cool project. But dummy One..."},
-		{"name": "Cool Project 12", "desc": "This is a very cool project. But dummy One..."}
-	];
+mainApp.controller('projectsCtrl', ['$scope', 'sharedVars', '$http', '$location', function ($scope, sharedVars, $http, $location) {
+	$http.get('data/projects/menu.json').then(function (res) {
+      //console.log(data);
+      $scope.projects = res.data.projects;
+   });
+
+   $scope.goToUrl = function (ev) {
+      //console.log(ev.currentTarget.attributes["data-url"].nodeValue);
+      //console.log(jQuery(ev.currentTarget).attr("data-url"));
+      var dataUrl = ev.currentTarget.attributes["data-url"].nodeValue;
+      $location.path(dataUrl);      
+   }
 }]);
+
+/********************* Projects Pages Controller ********************/
+mainApp.controller('projectPageCtrl', ['$scope', 'sharedVars', '$http', '$routeParams', function ($scope, sharedVars, $http, $routeParams) {
+   var params = $routeParams;
+   //console.log(params);
+   var path = 'data/projects/posts/' + params.postID;
+   //console.log(path);
+
+   $http.get(path).then(function (res) {
+      //console.log(res);
+      $scope.data = res.data;
+   });
+}]);
+
+
 
