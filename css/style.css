@@ -31,6 +31,24 @@ ul li {
 	color: #FFF;
 }
 
+.projectOuterContainer {
+	border: 1px solid #FFF;
+	margin-top: 15px;
+	border-radius: 3px;
+}
+
+.projectOuterContainer .projectName {
+	margin: 0;
+	padding: 5px 10px;
+	font-size: 18px;
+	background: rgba(29, 0, 200, 0.5);
+}
+
+.projectOuterContainer .projectDesc {
+	padding: 10px;
+	background: rgba(140, 0, 0, 0.5);
+}
+
 footer {
 	text-align: center;
 }
