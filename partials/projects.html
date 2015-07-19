@@ -1,5 +1,5 @@
 <ul class="projectsListContainer">
-	<li data-ng-repeat="project in projects" class="col-xs-12 col-sm-4 col-md-3">
+	<li data-ng-repeat="project in projects" class="col-xs-12 col-sm-4 col-md-3" data-url="{{project.url}}" data-ng-click="goToUrl($event)">
 		<div class="projectOuterContainer">
 			<h3 class="projectName">{{project.name}}</h3>
 			<div class="projectDesc">{{project.desc}}</div>

@@ -1,0 +1,14 @@
+$scope.projects = [
+		{"name": "Cool Project 1", "desc": "This is a very cool project. But dummy One..."},
+		{"name": "Cool Project 2", "desc": "This is a very cool project. But dummy One..."},
+		{"name": "Cool Project 3", "desc": "This is a very cool project. But dummy One..."},
+		{"name": "Cool Project 4", "desc": "This is a very cool project. But dummy One..."},
+		{"name": "Cool Project 5", "desc": "This is a very cool project. But dummy One..."},
+		{"name": "Cool Project 6", "desc": "This is a very cool project. But dummy One..."},
+		{"name": "Cool Project 7", "desc": "This is a very cool project. But dummy One..."},
+		{"name": "Cool Project 8", "desc": "This is a very cool project. But dummy One..."},
+		{"name": "Cool Project 9", "desc": "This is a very cool project. But dummy One..."},
+		{"name": "Cool Project 10", "desc": "This is a very cool project. But dummy One..."},
+		{"name": "Cool Project 11", "desc": "This is a very cool project. But dummy One..."},
+		{"name": "Cool Project 12", "desc": "This is a very cool project. But dummy One..."}
+	];

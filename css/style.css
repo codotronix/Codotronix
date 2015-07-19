@@ -12,13 +12,18 @@ ul li {
 	list-style: none;
 }
 
+.bodyContainer {
+	min-height: 500px;
+}
+
 .headerPanel #logoPanel .logo {
 	color: #FFF;
 	font-size: 35px;
+	text-decoration: none !important;
 }
 
 .headerPanel #logoPanel .logo:hover {
-	text-decoration: none;
+	
 }
 
 .headerPanel .navbar .navbar-nav li a {
@@ -45,6 +50,7 @@ ul li {
 }
 
 .projectOuterContainer .projectDesc {
+	border-top: 2px inset rgb(140,0,0);
 	padding: 10px;
 	background: rgba(140, 0, 0, 0.5);
 }

@@ -17,6 +17,10 @@ mainApp.config(['$routeProvider',
 	              templateUrl: 'partials/projects.html',
 	              controller: 'projectsCtrl'
 	           })
+	           .when('/projects/:postID', {
+	              templateUrl: 'partials/projectPage.html',
+	              controller: 'projectPageCtrl'
+	           })
 	           .when('/', {
 	           		redirectTo: '/projects'
 	           })

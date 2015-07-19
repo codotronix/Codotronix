@@ -1,0 +1,54 @@
+{
+	"projects": [
+		{
+			"name": "Cool Projects 1",
+			"desc": "This is a supercool personal project. I do these kind of stuff for fun.",
+			"url": "projects/coolProject1.txt"
+		},
+		{
+			"name": "Cool Projects 2",
+			"desc": "This is a supercool personal project. I do these kind of stuff for fun.",
+			"url": "projects/coolProject2.txt"
+		},
+		{
+			"name": "Cool Projects 3",
+			"desc": "This is a supercool personal project. I do these kind of stuff for fun.",
+			"url": "projects/coolProject3.txt"
+		},
+		{
+			"name": "Cool Projects 4",
+			"desc": "This is a supercool personal project. I do these kind of stuff for fun.",
+			"url": "projects/coolProject4.txt"
+		},
+		{
+			"name": "Cool Projects 5",
+			"desc": "This is a supercool personal project. I do these kind of stuff for fun.",
+			"url": "projects/coolProject5.txt"
+		},
+		{
+			"name": "Cool Projects 6",
+			"desc": "This is a supercool personal project. I do these kind of stuff for fun.",
+			"url": "projects/coolProject6.txt"
+		},
+		{
+			"name": "Cool Projects 7",
+			"desc": "This is a supercool personal project. I do these kind of stuff for fun.",
+			"url": "projects/coolProject7.txt"
+		},
+		{
+			"name": "Cool Projects 8",
+			"desc": "This is a supercool personal project. I do these kind of stuff for fun.",
+			"url": "projects/coolProject8.txt"
+		},
+		{
+			"name": "Cool Projects 9",
+			"desc": "This is a supercool personal project. I do these kind of stuff for fun.",
+			"url": "projects/coolProject9.txt"
+		},
+		{
+			"name": "Cool Projects 10",
+			"desc": "This is a supercool personal project. I do these kind of stuff for fun.",
+			"url": "projects/coolProject10.txt"
+		}
+	]
+}
