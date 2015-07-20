@@ -79,7 +79,7 @@ $(function(){
       var y = ev.offsetY; 
       var bgX = parseInt($('body').css('background-position-x'));
       var bgY = parseInt($('body').css('background-position-y'));
-      var offset = 5;
+      var offset = 1;
       var diff = 10;
 
       if(x > oldMousePos.x) {
