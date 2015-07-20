@@ -59,4 +59,51 @@ mainApp.controller('projectPageCtrl', ['$scope', 'sharedVars', '$http', '$routeP
 }]);
 
 
+$(function(){
+   var oldMousePos = {};
+   oldMousePos.x = 0;
+   oldMousePos.y = 0;
+   oldMousePos.time = 0;
+
+   $('body').on('mousemove', function (ev) {
+      /*
+      var d = (new Date()).getTime();
+      if((d-oldMousePos.time) < 100) {
+         return;
+      } else {
+         oldMousePos.time = d;
+      }
+      */
+
+      var x = ev.offsetX; 
+      var y = ev.offsetY; 
+      var bgX = parseInt($('body').css('background-position-x'));
+      var bgY = parseInt($('body').css('background-position-y'));
+      var offset = 5;
+      var diff = 10;
+
+      if(x > oldMousePos.x) {
+         bgX -= offset;
+      } else if(x < oldMousePos.x) {
+         bgX += offset;         
+      }
+      
+      if(y > oldMousePos.y) {
+         bgY -= offset;         
+      } else if(y < oldMousePos.y) {
+         bgY += offset;
+      }
+
+      oldMousePos.x = x;
+      oldMousePos.y = y;
+      
+
+      $('body').css({
+         "background-position-x": bgX + 'px',
+         "background-position-y": bgY + 'px'
+      })
+   });
+})
+
+
 
