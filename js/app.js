@@ -66,15 +66,7 @@ $(function(){
    oldMousePos.time = 0;
 
    $('body').on('mousemove', function (ev) {
-      /*
-      var d = (new Date()).getTime();
-      if((d-oldMousePos.time) < 100) {
-         return;
-      } else {
-         oldMousePos.time = d;
-      }
-      */
-
+      
       var x = ev.offsetX; 
       var y = ev.offsetY; 
       var bgX = parseInt($('body').css('background-position-x'));
