@@ -58,6 +58,9 @@ body {
 
 .projectOuterContainer:hover {
 	/*border-style: inset;*/
+	-webkit-box-shadow: 0px -1px 5px 6px rgb(36, 131, 255);
+    -moz-box-shadow: 0px -1px 5px 6px rgb(36, 131, 255);
+    box-shadow: 0px -1px 5px 6px rgb(36, 131, 255);
 }
 
 .projectOuterContainer .projectName {
