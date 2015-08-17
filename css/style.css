@@ -1,6 +1,6 @@
 * {
 	color: #FFF;
-	background: #000;
+	background: transparent;
 }
 
 ul {
@@ -12,8 +12,22 @@ ul li {
 	list-style: none;
 }
 
+body {
+	background: url("../images/starry.png") 0px 0px repeat;
+}
+
 .bodyContainer {
 	min-height: 500px;
+}
+
+.navbar-default {
+	background: transparent;
+	color: #FFF;
+}
+
+#bs-navbar-collapse-1 {
+	background: rgb(0, 0, 0);
+	background: rgba(0, 0, 0, 0.5);
 }
 
 .headerPanel #logoPanel .logo {
@@ -37,22 +51,26 @@ ul li {
 }
 
 .projectOuterContainer {
-	border: 1px solid #FFF;
+	/*border: 3px outset #941C1C;*/
 	margin-top: 15px;
 	border-radius: 3px;
+}
+
+.projectOuterContainer:hover {
+	/*border-style: inset;*/
 }
 
 .projectOuterContainer .projectName {
 	margin: 0;
 	padding: 5px 10px;
 	font-size: 18px;
-	background: rgba(29, 0, 200, 0.5);
+	background: rgba(0, 3, 255, 0.5);
+	border-bottom: 2px outset rgb(0, 3, 255);
 }
 
 .projectOuterContainer .projectDesc {
-	border-top: 2px inset rgb(140,0,0);
 	padding: 10px;
-	background: rgba(140, 0, 0, 0.5);
+	background: rgba(0, 0, 0, 0.75);
 }
 
 footer {
