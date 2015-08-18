@@ -35,14 +35,11 @@ body {
 }
 
 #bs-navbar-collapse-1 {
-	background: rgb(0, 0, 0);
-	background: rgba(0, 0, 0, 0.5);
+	background: transparent;
 }
 
-.headerPanel #logoPanel .logo {
-	color: #FFF;
-	font-size: 35px;
-	text-decoration: none !important;
+.headerPanel #logoPanel {
+	position: relative;
 }
 
 .headerPanel .navbar .navbar-nav li a {
@@ -53,6 +50,10 @@ body {
 	/*border: 3px outset #941C1C;*/
 	margin-top: 15px;
 	border-radius: 3px;
+}
+
+.cv-img {
+	width: 75px;
 }
 
 .headerPanel .navbar .navbar-nav li:hover,
@@ -95,7 +96,21 @@ footer {
 	color: rgb(185, 203, 255);
 }
 
+.blueBorder {
+	border: 1px solid rgb(36, 131, 255);
+	border-radius: 4px;
+}
 
+.autoText {
+	padding-top: 10px;
+}
+
+.autoText label {	
+	width: 100%;
+	padding: 5px 9px;
+	min-height: 50px;
+	font-size: 22px;
+}
 
 .panel.panel-default {
 	background-color: transparent;
@@ -119,13 +134,49 @@ footer {
 }
 
 @media (min-width: 768px) {
+	.autoText label {
+		margin-top: 13px;
+		padding-left: 80px;
+	}
+
+	.cv-img-link {
+		position: absolute;
+		left: 9px;
+	}
+
 	.headerPanel .navbar .container-fluid {
 		padding-left: 0;
 		padding-right: 0;
-	}	
+	}
+
+	.navbar-default {
+		border: none;
+		margin-top: 9px;
+	}
+
+	.navbar-nav>li,
+	.navbar-nav>li>a {
+		margin-left: 5px;
+    	background-color: rgba(36, 131, 255, .2);
+    	border-radius: 50%;
+	}
 }
 
 @media (max-width: 767px) {
+	.autoText {
+		padding-top: 0;
+	}
+
+	.cv-img-link {
+		display: block;
+		margin: 7px 0;
+	}
+
+	.cv-img {
+		display: block;
+    	margin: 0 auto;
+	}
+
 	/*In mobile devices stars will keep scrolling automatically*/
 	.liveSky {
 		background: url("../images/starry.png") 0px 0px repeat;

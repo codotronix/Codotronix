@@ -3,12 +3,55 @@ var mainApp = angular.module('mainApp', ['ngRoute']);
 
 /****** The Main Controller *****/
 mainApp.controller('mainCtrl', ['$scope', 'sharedVars', function ($scope, sharedVars) {
-	   $scope.topMenu = ['Menu Item 1', 'Menu Item 2', 'Menu Item 3', 'Menu Item 4', 'Menu Item 5', 'Menu Item 6'];
-      $scope.leftMenu = ['Side Item 1', 'Side Item 2', 'Side Item 3', 'Side Item 4', 'Side Item 5', 'Side Item 6'];
+	   
       $scope.classPageId = "loginPage";
       $scope.$on('pageChange', function () {
-      $scope.classPageId = sharedVars.classPageId;
-   }) 
+         $scope.classPageId = sharedVars.classPageId;
+      });      
+}]);
+
+
+/***** autoTxtCtrl ***********/
+mainApp.controller('autoTxtCtrl', ['$scope', '$timeout', function ($scope, $timeout) {
+   var greets = [
+      "Hi ! my name is Suman Barick...",      
+      "Thank you for visiting my site...",
+      "My site is under-development...",
+      "Please visit again in a few days...",
+      "Have a nice day..."
+   ];
+
+   
+   var greetNo = 0;
+
+   var greet = function () {
+      var lineArr = greets[greetNo].split('');
+      var line = '';
+      var ind = 0;     
+
+      var typeLine = function () {
+         line += lineArr[ind];
+         $scope.autoText = line + '_';
+         if(ind >= (lineArr.length - 1)) {
+            //move on to next greetings msg
+            greetNo++;
+            if(greetNo > (greets.length - 1)) {
+               greetNo = 0;
+            }
+            $timeout(greet, 3000);
+         }
+         else {
+            ind++;
+            $timeout(typeLine, 200);
+         }
+      };
+
+      typeLine();     
+   };
+
+   //call the greet for the 1st time to start the timer chain
+   greet();
+            
 }]);
 
 /****** lets do the routing ***********/
