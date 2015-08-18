@@ -1,6 +1,7 @@
 * {
 	color: #FFF;
 	background: transparent;
+	font-size: 15px;
 }
 
 label {
@@ -18,6 +19,10 @@ ul li {
 
 body {
 	background: url("../images/starry.png") 0px 0px repeat;
+}
+
+.navbar-default {
+    border-color: rgb(36, 131, 255);
 }
 
 .bodyContainer {
@@ -53,7 +58,8 @@ body {
 .headerPanel .navbar .navbar-nav li:hover,
 .headerPanel .navbar .navbar-nav li a:hover,
 .projectOuterContainer:hover,
-#aboutPage .cv-img:hover {
+#aboutPage .cv-img:hover,
+.panel.panel-default:hover {
 	-webkit-box-shadow: 0px -1px 5px 6px rgb(36, 131, 255);
     -moz-box-shadow: 0px -1px 5px 6px rgb(36, 131, 255);
     box-shadow: 0px -1px 5px 6px rgb(36, 131, 255);
@@ -80,9 +86,36 @@ footer {
 	max-height: 200px;
 }
 
-#aboutPage .exp {
+#aboutPage .aboutBox {
 	margin-top: 30px;
 	font-size: 22px;
+}
+
+.blueHighlight:hover {
+	color: rgb(185, 203, 255);
+}
+
+
+
+.panel.panel-default {
+	background-color: transparent;
+	border-color: rgb(36, 131, 255);
+}
+
+.panel.panel-default .panel-heading {
+	padding: 5px 10px;
+    background: rgba(0, 3, 255, 0.5);
+    border-bottom: 2px outset rgb(0, 3, 255);
+    color: #FFF;
+}
+
+.panel.panel-default .panel-heading .panel-title {
+	font-size: 20px;
+}
+
+.panel.panel-default .panel-body {
+	padding: 10px;
+    background: rgba(0, 0, 0, 0.75);
 }
 
 @media (min-width: 768px) {
@@ -94,10 +127,11 @@ footer {
 
 @media (max-width: 767px) {
 	/*In mobile devices stars will keep scrolling automatically*/
-	.liveSky { 
-    	-webkit-animation-duration: 25s; 
-    	animation-duration: 25s; 
-    	animation-direction: alternate;
+	.liveSky {
+		background: url("../images/starry.png") 0px 0px repeat;
+    	-webkit-animation-duration: 10000s; 
+    	animation-duration: 10000s;
+    	/*animation-direction: alternate;*/
     	animation-timing-function: linear;
     	/*-webkit-animation-fill-mode: both; 
 	    animation-fill-mode: both; */
@@ -109,13 +143,11 @@ footer {
 
 	@-webkit-keyframes moveStars { 
 	    0% {background-position: 0px 0px;} 
-	    100% {background-position: 0px 1000px;} 
+	    100% {background-position: 0px 1000000px;} 
 	}
 
 	@keyframes moveStars { 
 	    0% {background-position: 0px 0px;} 
-	    100% {background-position: 0px 1000px;} 
+	    100% {background-position: 0px 1000000px;} 
 	}
 }
-
-
