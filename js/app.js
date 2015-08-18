@@ -66,31 +66,24 @@ $(function(){
    oldMousePos.time = 0;
 
    $('body').on('mousemove', function (ev) {
-      /*
-      var d = (new Date()).getTime();
-      if((d-oldMousePos.time) < 100) {
-         return;
-      } else {
-         oldMousePos.time = d;
-      }
-      */
-
+      
       var x = ev.offsetX; 
       var y = ev.offsetY; 
       var bgX = parseInt($('body').css('background-position-x'));
       var bgY = parseInt($('body').css('background-position-y'));
-      var offset = 1;
+      var offset = 200;
       var diff = 10;
+      var stabltyFctr = 0;
 
-      if(x > oldMousePos.x) {
+      if(x > (oldMousePos.x + stabltyFctr)) {
          bgX -= offset;
-      } else if(x < oldMousePos.x) {
+      } else if(x < (oldMousePos.x - stabltyFctr)) {
          bgX += offset;         
       }
       
-      if(y > oldMousePos.y) {
+      if(y > (oldMousePos.y + stabltyFctr)) {
          bgY -= offset;         
-      } else if(y < oldMousePos.y) {
+      } else if(y < (oldMousePos.y-stabltyFctr)) {
          bgY += offset;
       }
 
@@ -98,10 +91,10 @@ $(function(){
       oldMousePos.y = y;
       
 
-      $('body').css({
+      $('body').stop().animate({
          "background-position-x": bgX + 'px',
          "background-position-y": bgY + 'px'
-      })
+      }, 999);
    });
 })
 
