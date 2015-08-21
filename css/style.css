@@ -66,6 +66,7 @@ body {
     box-shadow: 0px -1px 5px 6px rgb(36, 131, 255);
 }
 
+/*
 .projectOuterContainer .projectName {
 	margin: 0;
 	padding: 5px 10px;
@@ -78,6 +79,7 @@ body {
 	padding: 10px;
 	background: rgba(0, 0, 0, 0.75);
 }
+*/
 
 footer {
 	text-align: center;
@@ -114,7 +116,8 @@ footer {
 
 .panel.panel-default {
 	background-color: transparent;
-	border-color: rgb(36, 131, 255);
+	/*border-color: rgb(36, 131, 255);*/
+	border: none;
 }
 
 .panel.panel-default .panel-heading {
@@ -131,6 +134,32 @@ footer {
 .panel.panel-default .panel-body {
 	padding: 10px;
     background: rgba(0, 0, 0, 0.75);
+}
+
+.projectsListContainer .projectCapsule {
+	cursor: pointer;
+	margin-bottom: 10px;
+}
+
+.projectsListContainer .fa {
+	color: rgb(107, 171, 255);
+	font-size: 17px;
+	margin-right: 5px;
+}
+
+.projectsListContainer .projectDesc {
+	height: 120px;
+	overflow: auto;
+}
+
+.projectsListContainer .projectDesc img {
+	height: 100px;
+	width: 100px;
+	margin: 0 10px 0 0;
+}
+
+.projectsListContainer .projectDesc .techUsed {
+	margin-top: 5px;
 }
 
 @media (min-width: 768px) {

@@ -1,19 +1,28 @@
 {
 	"projects": [
 		{
-			"name": "Cool Projects 1",
-			"desc": "This is a supercool personal project. I do these kind of stuff for fun.",
-			"url": "projects/coolProject1.txt"
+			"name"		: "Asteroid Attack",
+			"desc"		: "Browser based space shooter game",
+			"category"	: "Game",
+			"techUsed"	: "HTML, CSS, JavaScript, jQuery",
+			"url"		: "projects/asteroidAttackDesc.json",
+			"imgUrl"	: "images/projectThumbnails/asteroidAttack.png"
 		},
 		{
-			"name": "Cool Projects 2",
-			"desc": "This is a supercool personal project. I do these kind of stuff for fun.",
-			"url": "projects/coolProject2.txt"
+			"name"		: "Mini Puzzle",
+			"desc"		: "Browser based puzzle game with various customization options",
+			"category"	: "Game",
+			"techUsed"	: "HTML, CSS, JavaScript, jQuery",
+			"url"		: "projects/miniPuzzleDesc.json",
+			"imgUrl"	: "images/projectThumbnails/miniPuzzle.png"			
 		},
 		{
-			"name": "Cool Projects 3",
-			"desc": "This is a supercool personal project. I do these kind of stuff for fun.",
-			"url": "projects/coolProject3.txt"
+			"name"		: "Brick Breaker",
+			"desc"		: "Simple brick breaker game that runs in any browser",
+			"category"	: "Game",
+			"techUsed"	: "HTML, CSS, JavaScript, jQuery",
+			"url"		: "projects/brickBreakerDesc.json",
+			"imgUrl"	: "images/projectThumbnails/brickBreaker.png"
 		},
 		{
 			"name": "Cool Projects 4",
