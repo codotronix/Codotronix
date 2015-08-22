@@ -5,7 +5,7 @@
 			"desc"		: "Browser based space shooter game",
 			"category"	: "Game",
 			"techUsed"	: "HTML, CSS, JavaScript, jQuery",
-			"url"		: "projects/asteroidAttackDesc.json",
+			"url"		: "http://barick.in/Asteroid-Attack/play.html",
 			"imgUrl"	: "images/projectThumbnails/asteroidAttack.png"
 		},
 		{
@@ -13,51 +13,32 @@
 			"desc"		: "Browser based puzzle game with various customization options",
 			"category"	: "Game",
 			"techUsed"	: "HTML, CSS, JavaScript, jQuery",
-			"url"		: "projects/miniPuzzleDesc.json",
+			"url"		: "http://barick.in/mini-puzzle/puzzle.html",
 			"imgUrl"	: "images/projectThumbnails/miniPuzzle.png"			
+		},
+		{
+			"name": "ONE Mall",
+			"desc": "Online shopping mall",
+			"category"	: "Website",
+			"techUsed"	: "HTML, CSS, jQuery, AngularJS",
+			"url"		: "http://one.barick.in",
+			"imgUrl"	: "images/projectThumbnails/oneMall.png"
 		},
 		{
 			"name"		: "Brick Breaker",
 			"desc"		: "Simple brick breaker game that runs in any browser",
 			"category"	: "Game",
 			"techUsed"	: "HTML, CSS, JavaScript, jQuery",
-			"url"		: "projects/brickBreakerDesc.json",
+			"url"		: "http://barick.in/brick-breaker/BrickBreaker.html",
 			"imgUrl"	: "images/projectThumbnails/brickBreaker.png"
-		},
+		},		
 		{
-			"name": "Cool Projects 4",
-			"desc": "This is a supercool personal project. I do these kind of stuff for fun.",
-			"url": "projects/coolProject4.txt"
-		},
-		{
-			"name": "Cool Projects 5",
-			"desc": "This is a supercool personal project. I do these kind of stuff for fun.",
-			"url": "projects/coolProject5.txt"
-		},
-		{
-			"name": "Cool Projects 6",
-			"desc": "This is a supercool personal project. I do these kind of stuff for fun.",
-			"url": "projects/coolProject6.txt"
-		},
-		{
-			"name": "Cool Projects 7",
-			"desc": "This is a supercool personal project. I do these kind of stuff for fun.",
-			"url": "projects/coolProject7.txt"
-		},
-		{
-			"name": "Cool Projects 8",
-			"desc": "This is a supercool personal project. I do these kind of stuff for fun.",
-			"url": "projects/coolProject8.txt"
-		},
-		{
-			"name": "Cool Projects 9",
-			"desc": "This is a supercool personal project. I do these kind of stuff for fun.",
-			"url": "projects/coolProject9.txt"
-		},
-		{
-			"name": "Cool Projects 10",
-			"desc": "This is a supercool personal project. I do these kind of stuff for fun.",
-			"url": "projects/coolProject10.txt"
+			"name"		: "My Galaxy",
+			"desc"		: "I, hereby, placing myself at the center of the galaxy",
+			"category"	: "Website",
+			"techUsed"	: "HTML, CSS, JavaScript, jQuery",
+			"url"		: "http://barick.in/galaxy",
+			"imgUrl"	: "images/projectThumbnails/galaxy.png"
 		}
 	]
 }

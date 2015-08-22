@@ -4,6 +4,10 @@
 	font-size: 15px;
 }
 
+a {
+	text-decoration: none !important;
+}
+
 label {
 	font-weight: normal;
 }
@@ -137,8 +141,8 @@ footer {
 }
 
 .projectsListContainer .projectCapsule {
+	margin-bottom: 20px;
 	cursor: pointer;
-	margin-bottom: 10px;
 }
 
 .projectsListContainer .fa {
@@ -158,8 +162,8 @@ footer {
 	margin: 0 10px 0 0;
 }
 
-.projectsListContainer .projectDesc .techUsed {
-	margin-top: 5px;
+.projectsListContainer .projectDesc div {
+	margin-bottom: 5px;
 }
 
 @media (min-width: 768px) {
