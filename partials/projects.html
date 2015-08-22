@@ -1,6 +1,7 @@
 <ul class="projectsListContainer">
-	<li data-ng-repeat="project in projects" class="col-xs-12 col-sm-4 projectCapsule" data-url="{{project.url}}" data-ng-click="goToUrl($event)">		
-		<div class="panel panel-default">
+	<!--<li data-ng-repeat="project in projects" class="col-xs-12 col-sm-6 col-md-4 projectCapsule" data-url="{{project.url}}" data-ng-click="goToUrl($event)">-->
+	<li data-ng-repeat="project in projects" class="col-xs-12 col-sm-6 col-md-4 projectCapsule">
+		<a href="{{project.url}}" target="_blank" class="panel panel-default">
 			<div class="panel-heading">
 			    <h3 class="panel-title projectName">
 			    	{{project.name}}
@@ -15,8 +16,12 @@
 				<div class="techUsed">
 					<i class="fa fa-cog fa-spin"></i>
 					{{project.techUsed}}
-				</div>							
+				</div>
+				<div class="category">
+					<i class="fa fa-flag"></i>
+					{{project.category}}
+				</div>						
 			</div>
-		</div>
+		</a>
 	</li>
 </ul>
