@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Codotronix</title>
 	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<script src="js/jquery-1.10.2.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
@@ -27,7 +28,7 @@
 <body class="{{classPageId}} liveSky">
 	<div class="container-fluid mainContainer">
 		<!-- include the header -->
-		<div data-ng-include="'partials/headerPanel.html'" class="headerPanel"></div>
+		<div data-ng-include="'partials/headerPanel.html'" class="headerPanel" data-ng-controller="autoTxtCtrl"></div>
 
 		<!-- body portion -->
 		<div class="bodyContainer" data-ng-view=""></div>
