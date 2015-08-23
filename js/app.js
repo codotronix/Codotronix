@@ -62,8 +62,58 @@ mainApp.controller('homeCtrl', ['$scope', 'sharedVars', function ($scope, shared
 
 }]);
 
-mainApp.controller('aboutCtrl', ['$scope', 'sharedVars', function ($scope, sharedVars) {
-	
+mainApp.controller('aboutCtrl', ['$scope', 'sharedVars', '$timeout', function ($scope, sharedVars, $timeout) {
+	var startDate = new Date((new Date("11 October, 2011")).toUTCString());
+   //var endDate = new Date().toUTCString();
+
+   function calculateExp () {
+      var endDate = new Date((new Date()).toUTCString());
+      var diff = endDate - startDate;
+      var years = diff / (1000 * 3600 * 24 * 365);
+      var months = (years % 1) * 12;
+      years = Math.floor(years);
+      var days = (months % 1) * 30;
+      months = Math.floor(months);
+      var hours = (days % 1) * 24;
+      days = Math.floor(days);
+      var mins = (hours % 1) * 60;
+      hours = Math.floor(hours);
+      var secs = (mins % 1) * 60;
+      mins = Math.floor(mins);
+      secs = Math.floor(secs);
+
+      if (years.toString().length == 1) {
+         years = '0'+years;
+      }
+      if (months.toString().length == 1) {
+         months = '0'+months;
+      }
+      if (days.toString().length == 1) {
+         days = '0'+days;
+      }
+      if (hours.toString().length == 1) {
+         hours = '0'+hours;
+      }
+      if (mins.toString().length == 1) {
+         mins = '0'+mins;
+      }
+      if (secs.toString().length == 1) {
+         secs = '0'+secs;
+      }
+
+      //console.log(years + ' years ' + months + ' months ' + days + ' days ' + hours + ' hours ' + mins + ' mins ' + secs + ' secs');
+
+      $scope.years = years;
+      $scope.months = months;
+      $scope.days = days;
+      $scope.hours = hours;
+      $scope.mins = mins;
+      $scope.secs = secs;
+
+      $timeout(calculateExp, 1000);
+   }
+
+   calculateExp();
 }]);
 
 mainApp.controller('peopleCtrl', ['$scope', 'sharedVars', function ($scope, sharedVars) {
