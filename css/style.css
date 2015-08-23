@@ -50,10 +50,8 @@ body {
 	color: #FFF;
 }
 
-.projectOuterContainer {
-	/*border: 3px outset #941C1C;*/
-	margin-top: 15px;
-	border-radius: 3px;
+.projectCapsule .panel.panel-default{
+	display: block;
 }
 
 .cv-img {
@@ -62,7 +60,7 @@ body {
 
 .headerPanel .navbar .navbar-nav li:hover,
 .headerPanel .navbar .navbar-nav li a:hover,
-.projectOuterContainer:hover,
+.projectCapsule a:hover,
 #aboutPage .cv-img:hover,
 .panel.panel-default:hover {
 	-webkit-box-shadow: 0px -1px 5px 6px rgb(36, 131, 255);
