@@ -6,7 +6,7 @@
 			"category"	: "Game",
 			"techUsed"	: "HTML, CSS, JavaScript, jQuery",
 			"url"		: "http://barick.in/Asteroid-Attack/play.html",
-			"imgUrl"	: "images/projectThumbnails/asteroidAttack.png"
+			"imgUrl"	: "http://3.bp.blogspot.com/-6EF0BUkoyQw/Vdw6P32KWNI/AAAAAAAAAVg/nUHXiKoQ6wI/s1600/asteroidAttack.png"
 		},
 		{
 			"name"		: "Mini Puzzle",
@@ -14,7 +14,7 @@
 			"category"	: "Game",
 			"techUsed"	: "HTML, CSS, JavaScript, jQuery",
 			"url"		: "http://barick.in/mini-puzzle/puzzle.html",
-			"imgUrl"	: "images/projectThumbnails/miniPuzzle.png"			
+			"imgUrl"	: "http://4.bp.blogspot.com/--fFLBrVmLRM/Vdw6Rd7U-bI/AAAAAAAAAWI/RtMK0_FEt-4/s1600/miniPuzzle.png"			
 		},
 		{
 			"name": "ONE Mall",
@@ -22,7 +22,7 @@
 			"category"	: "Website",
 			"techUsed"	: "HTML, CSS, jQuery, AngularJS",
 			"url"		: "http://one.barick.in",
-			"imgUrl"	: "images/projectThumbnails/oneMall.png"
+			"imgUrl"	: "http://2.bp.blogspot.com/-0lgR0CXMVZU/Vdw6Rlo91bI/AAAAAAAAAWQ/XsuQ2EMPwro/s1600/oneMall.png"
 		},
 		{
 			"name"		: "Angular Tank (In Progress...)",
@@ -38,7 +38,7 @@
 			"category"	: "Website",
 			"techUsed"	: "HTML, CSS, JavaScript, jQuery",
 			"url"		: "http://barick.in/galaxy",
-			"imgUrl"	: "images/projectThumbnails/galaxy.png"
+			"imgUrl"	: "http://1.bp.blogspot.com/-ooJ2A_T4dng/Vdw6Q2fmWZI/AAAAAAAAAV4/_wA0o8SJ65E/s1600/galaxy.png"
 		},
 		{
 			"name"		: "Island Chat",
@@ -54,7 +54,7 @@
 			"category"	: "Game",
 			"techUsed"	: "HTML, CSS, JavaScript, jQuery",
 			"url"		: "http://barick.in/brick-breaker/BrickBreaker.html",
-			"imgUrl"	: "images/projectThumbnails/brickBreaker.png"
+			"imgUrl"	: "http://4.bp.blogspot.com/-vpfDkO1z33o/Vdw6QmpJHzI/AAAAAAAAAVw/vqMzaciI8-E/s1600/brickBreaker.png"
 		}		
 	]
 }
