@@ -25,13 +25,13 @@
 			"imgUrl"	: "images/projectThumbnails/oneMall.png"
 		},
 		{
-			"name"		: "Brick Breaker",
-			"desc"		: "Simple brick breaker game that runs in any browser",
+			"name"		: "Angular Tank (In Progress...)",
+			"desc"		: "An attempt to make a basic game with AngularJS",
 			"category"	: "Game",
-			"techUsed"	: "HTML, CSS, JavaScript, jQuery",
-			"url"		: "http://barick.in/brick-breaker/BrickBreaker.html",
-			"imgUrl"	: "images/projectThumbnails/brickBreaker.png"
-		},		
+			"techUsed"	: "HTML, CSS, JavaScript, jQuery, AngularJS",
+			"url"		: "http://barick.in/cxge/",
+			"imgUrl"	: "images/projectThumbnails/angularTank.png"
+		},				
 		{
 			"name"		: "My Galaxy",
 			"desc"		: "I, hereby, placing myself at the center of the galaxy",
@@ -39,6 +39,22 @@
 			"techUsed"	: "HTML, CSS, JavaScript, jQuery",
 			"url"		: "http://barick.in/galaxy",
 			"imgUrl"	: "images/projectThumbnails/galaxy.png"
-		}
+		},
+		{
+			"name"		: "Island Chat",
+			"desc"		: "My own chat app with sound, smileys and emoticons",
+			"category"	: "Website",
+			"techUsed"	: "HTML, CSS, JavaScript, jQuery, Node.js, Socket.io",
+			"url"		: "http://chat.barick.c9.io/",
+			"imgUrl"	: "images/projectThumbnails/islandChat.png"
+		},
+		{
+			"name"		: "Brick Breaker",
+			"desc"		: "Simple brick breaker game that runs in any browser",
+			"category"	: "Game",
+			"techUsed"	: "HTML, CSS, JavaScript, jQuery",
+			"url"		: "http://barick.in/brick-breaker/BrickBreaker.html",
+			"imgUrl"	: "images/projectThumbnails/brickBreaker.png"
+		}		
 	]
 }
