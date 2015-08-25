@@ -96,19 +96,52 @@ footer {
 	font-size: 22px;
 }
 
-#aboutPage .expTime .inlineBlock {	
-	font-size: 18px;
+#aboutPage .expTime .inlineBlock {
+	min-width: 190px;
+	font-size: 22px;
 }
 
 #aboutPage .expTime .enCircle {
 	display: inline-block;
-	padding: 5px 10px;
+	padding: 5px 15px;
 	border-radius: 50%;
-	background: rgba(9,36,126,.7);
+	background: #877FFF;
 	color: #FFF;
 	font-weight: bold;
-	font-size: 30px;
+	font-size: 60px;
 	margin: 5px;
+}
+
+#aboutPage .introTxt {
+	display: block;
+	font-size: 22px;
+	text-align: center;
+	margin-bottom: 15px;
+}
+
+#aboutPage .expTime {
+	padding: 0;
+}
+
+.prevCom {
+	margin-bottom: 25px;	
+}
+
+.prevCom img {
+	margin-right: 10px;
+	border-radius: 50%;
+	width: 150px;
+	vertical-align: bottom;
+}
+
+.prevCom .companyDesc {
+	text-align: center;
+	display: inline-block;
+	font-size: 20px;
+}
+
+.prevCom .companyDesc .duration {
+	font-size: 17px;
 }
 
 .blueHighlight:hover {
