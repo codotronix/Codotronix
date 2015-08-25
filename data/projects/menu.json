@@ -30,7 +30,7 @@
 			"category"	: "Game",
 			"techUsed"	: "HTML, CSS, JavaScript, jQuery, AngularJS",
 			"url"		: "http://barick.in/cxge/",
-			"imgUrl"	: "images/projectThumbnails/angularTank.png"
+			"imgUrl"	: "http://1.bp.blogspot.com/-kzV7ThO71-U/Vdw6PzcOvgI/AAAAAAAAAVo/HL_AxMMDmS8/s1600/angularTank.png"
 		},				
 		{
 			"name"		: "My Galaxy",
@@ -46,7 +46,7 @@
 			"category"	: "Website",
 			"techUsed"	: "HTML, CSS, JavaScript, jQuery, Node.js, Socket.io",
 			"url"		: "http://chat.barick.c9.io/",
-			"imgUrl"	: "images/projectThumbnails/islandChat.png"
+			"imgUrl"	: "http://4.bp.blogspot.com/-9KqMh539WV0/Vdw6QwGOeuI/AAAAAAAAAV8/eCuzZpgyA0U/s1600/islandChat.png"
 		},
 		{
 			"name"		: "Brick Breaker",
